@@ -1,1 +1,70 @@
+<%-include('../partials/header');%> 
+<section class="User-Info-Section">
+    <div class="profile-img-container">
+        <img src="<%= avatar_url%>" alt="image" class="profile-img-container">
+        <div class="git-link">
+            <i class="fa fa-link" aria-hidden="true"></i>
+            <a href="<%= userURL%>"><%= userURL%></a>
+        </div>
+    </div>
+    <div class="user-profile-container">
+        <div class="user-name-container">
+            <i class="fa fa-user"></i>
+            <h3><%= userName%></h3>
+        </div>
+        <div class="user-bio-container">
+            <i class="fa fa-file-word-o" aria-hidden="true"></i>
+            <p><%= bio%></p>
+        </div>
+        <div class="user-address">
+            <i class="fa fa-map-marker"></i>
+            <p><%= location%></p>
+        </div>
 
+    </div>
+</section>
+<!-- section for getting user Repositories -->
+<section class="user-repository-section">
+    <% repos.forEach((repo)=>{ %>
+    <div class="repo-container">
+        <div class="repo-name">
+            <a href="<%= repo.html_url%>"><%= repo.name %></a>
+        </div>
+        <% if(repo.description == null){%>
+            <div class="repo-description">
+                <p>N/A</p>
+            </div>   
+        <%}else{%>
+        <div class="repo-description">
+            <p><%= repo.description %></p>
+        </div>
+        <%}%>
+        <div class="repo-topics-container">
+            <% repo.topics.forEach((topic)=>{ %>
+            <div class="repo-topic-name">
+                <p><%=topic%></p>
+            </div>
+            <% }) %>
+        </div>
+        
+    </div>
+    <% }) %>
+</section>
+
+<!-- section for pagination -->
+<section class="repo-pagination-section">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="/getOwnerRepos?owner=<%= userName%>&page=<%= (parseInt(currentPage)-parseInt(1))%>" tabindex="-1">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="/getOwnerRepos?owner=<%= userName%>&page=1">1</a></li>
+          <li class="page-item"><a class="page-link" href="/getOwnerRepos?owner=<%= userName%>&page=2">2</a></li>
+          <li class="page-item"><a class="page-link" href="/getOwnerRepos?owner=<%= userName%>&page=3">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="/getOwnerRepos?owner=<%= userName%>&page=<%= (parseInt(currentPage)+parseInt(1))%>">Next</a>
+          </li>
+        </ul>
+      </nav>
+</section>
+<%-include('../partials/footer');%>
