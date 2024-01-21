@@ -1,1 +1,176 @@
+/* CSS File for Home Page */
+.User-Info-Section
+{
+    display:flex;
+    flex-direction:row;
+    height: 15rem;
+    background-color: rgb(232 232 232);
+}
 
+.profile-img-container
+{
+    width:30%;
+    height: inherit;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.profile-img-container
+{
+    display: flex; 
+    flex-direction: column;
+}
+
+.profile-img-container>img
+{ 
+    height: 60%;
+    width: 40%; 
+    /* clip-path: circle(); */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin: 1rem;
+}
+
+.user-profile-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.5rem;
+    border-left: 6px solid white;
+    border-bottom: 6px solid white;
+    width: 70%;
+    background-color: #0091ff;
+    color: white;
+}
+
+.user-name-container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.user-name-container>i
+{
+    font-size:25px;
+    padding-right: .5rem;
+    padding-top: .3rem;
+}
+
+.user-address
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.user-address>i
+{
+    font-size:15px;
+    padding-right: .5rem;
+    padding-top: .3rem;
+}
+
+.user-bio-container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.user-bio-container>i
+{
+    font-size:15px;
+    padding-right: .5rem;
+    padding-top: .3rem;
+}
+
+/* Git link Section CSS */
+
+.git-link
+{
+    padding-left: .8rem;
+}
+
+.git-link>a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/* CSS for user repositoory section */
+
+.user-repository-section
+{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(232 232 232);
+    padding-top: 2rem;
+}
+
+.repo-container
+{
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    height: auto;
+    border-radius:.8rem;
+    margin:1rem;
+    background-color: white;
+    padding-top: 1rem;
+    color: #434343;
+}
+
+.repo-topics-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:30%;
+}
+
+.repo-topic-name
+{
+    display: flex;
+    width: 33%;
+    height: 80%;
+    background-color: #0091ff;
+    color: white;
+    font-weight: 600;
+    margin: 0.5rem;
+    justify-content: center;
+    border-radius: 0.3rem;
+}
+
+.repo-name>a
+{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #434343;
+    font-weight: 600;
+}
+
+.repo-name
+{
+    height:20%;
+    padding-left: 1rem;
+}
+
+.repo-description
+{
+    height:auto;
+    padding-left: 1rem;
+}
+
+/* pagination section */
+
+.repo-pagination-section
+{
+    color: #0091ff;
+}
