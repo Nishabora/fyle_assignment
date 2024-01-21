@@ -1,0 +1,62 @@
+/* CSS for User search Page */
+
+.Repo-search-section
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232 232 232);
+    background-image: url("/Images/git-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.repo-search-container
+{
+    height: 8rem;
+    width: 20rem;
+    background-color: #ffffff47;
+}
+
+.repo-search-container:hover  .repo-search-title 
+{
+    transition-duration: 1s;
+    background-color:#0091ff;
+}
+
+.repo-search-container:hover 
+{
+    transition-duration: 1s;
+    background-color: white;
+}
+
+.repo-search-title
+{
+    height:40%;
+    background-color: #0091ffa1;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+.repo-search-title>i
+{
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+
+.repo-input-container
+{
+    height:60%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
