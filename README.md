@@ -14,3 +14,10 @@ This is a web-app which is used to search Github users and the associated reposi
 * **Templates**
   * Partials
   * Views 
+* **.gitignore**
+* 
+* **README.md**
+* **config.env**
+* **package-lock.json**
+* **package.json**
+* **server.js**
