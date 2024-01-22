@@ -13,16 +13,16 @@ GitHub Repository Viewer is a web application that allows users to easily view t
 * **Responsive Design**: The application is responsive and works well on various devices, including desktops, tablets, and smartphones.
   
 
- **Demo**
+## **Demo**
 https://fyle-web-dev-404bdb8e6fc8.herokuapp.com/
 
 
-**Langueges** 
+## **Langueges** 
 * **Frontend**: EJS
 * **Backend**: javascript
 * **Styling**: CSS
 
-**Folder Structure**
+## **Folder Structure**
 
 * **Controllers**
   * Home.js
