@@ -18,9 +18,9 @@ https://fyle-web-dev-404bdb8e6fc8.herokuapp.com/
 
 
 **Langueges** 
-Frontend: EJS
-Backend: javascript
-Styling: CSS
+* **Frontend**: EJS
+* **Backend**: javascript
+* **Styling**: CSS
 
 **Folder Structure**
 
