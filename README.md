@@ -15,7 +15,6 @@ This is a web-app which is used to search Github users and the associated reposi
   * Partials
   * Views 
 * **.gitignore**
-* 
 * **README.md**
 * **config.env**
 * **package-lock.json**
